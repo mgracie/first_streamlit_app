@@ -37,8 +37,8 @@ try:
       selected_fruit = get_fruit_advice(fruit_choice)
       streamlit.dataframe(selected_fruit)
 
-        except URLError as e:
-  streamlit.error()
+except URLError as e:
+    streamlit.error()
     
 
 
